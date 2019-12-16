@@ -31,7 +31,7 @@ entry.push('./src/router.js')
 const config = {
     entry: entry,
     output: {
-        path: path.join(__dirname, 'build'),
+        path: path.join(__dirname, 'public'),
         filename: 'bundle.js',
         publicPath: './',
     },

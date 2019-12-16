@@ -9,9 +9,9 @@ module.exports = {
         './src/router.js'
     ],
     output: {
-        path: path.join(__dirname, 'build'),
+        path: path.join(__dirname, 'public'),
         filename: 'bundle.js',
-        publicPath: '/build/'
+        publicPath: '/public/'
     },
     module: {
         loaders: [

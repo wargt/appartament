@@ -1,0 +1,101 @@
+.scrollCnt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.filterContainer {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto !important;
+}
+.scrollInner {
+    padding: 5px;
+}
+@media all and ( min-width: 1410px ) {
+    .scrollInner {
+        padding: 15px;
+    }
+}
+.scrollInner:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.offerCnt {
+    width: 100%;
+    float: left;
+}
+@media all and ( min-width: 1000px ) {
+    .offerCnt {
+        width: 50%;
+        max-width: 467px;
+    }
+}
+
+.offer {
+    margin: 15px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.resizeImg {
+    min-width: 100%;
+    display: block;
+    opacity: 0;
+}
+.gradient,
+.gradient:after
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.gradient {
+    background-size: cover;
+}
+.gradient:after {
+    content: '';
+    background: url('./img/gradient.png') no-repeat 0 100%;
+    background-size: 100%;
+    opacity: 1;
+}
+.dataOffer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    display: table;
+    width: 100%;
+}
+.offerName {
+    display: table-cell;
+    padding-left: 15px;
+    vertical-align: bottom;
+    line-height: 25px;
+}
+.offerPrice {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+    width: 0;
+    white-space: nowrap;
+    padding-right: 15px;
+    font-size: 24px;
+}
+.offerPrice span {
+    font-size: 14px;
+    vertical-align: super;
+    position: relative;
+    top: 2px;
+    right: -2px;
+}

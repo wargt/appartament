@@ -1,0 +1,111 @@
+.tabCnt {
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+.tab {
+    display: table-cell;
+    background: #f6f8f9;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #57778e;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.tabShadow {
+    position: absolute;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    z-index: 1;
+    box-shadow: 0px 5px 27.2px 4.8px rgba(70, 72, 74, 0.12);
+}
+.tabName {
+    position: absolute;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    z-index: 1;
+    background: #f7f9fa;
+}
+.tabActive .tabShadow
+{
+    z-index: 2;
+}
+.tabActive .tabName {
+    z-index: 3;
+    background: #fff;
+}
+
+.tagsPanel {
+    position: relative;
+    z-index: 2;
+    background: white;
+    box-shadow: 0px 5px 27.2px 4.8px rgba(70, 72, 74, 0.12);
+    padding: 14px 29px 18px 29px;
+    min-height: 34px;
+    display: table;
+    width: 100%;
+}
+.tagsList {
+    display: table-cell;
+    width: 0%;
+}
+.offerCount {
+    display: table-cell;
+    width: 80px;
+    line-height: 26px;
+    vertical-align: middle;
+    font-weight: 300;
+    color: #28373e;
+    padding-right: 33px;
+    white-space: nowrap;
+}
+.ametiesTag {
+    box-shadow: 0px 1px 17.64px 3.36px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgb(225, 230, 232);
+    border-radius: 4px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    padding: 0 26px 0 10px;
+    display: inline-block;
+    color: #28373e;
+    position: relative;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-top: 4px;
+}
+.ametiesTag:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 26px;
+    background: url('../filter/img/close.png') no-repeat 50% 50%;
+    pointer-events: none;
+}
+.ametiesTag:hover {
+    background-color: rgba(0, 113, 230, 0.07);
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+    .ametiesTag:after {
+        background: url("../filter/img/close@2x.png") no-repeat 50% 50%;
+        background-size: 12px;
+    }
+}

@@ -1,0 +1,40 @@
+@import url('./leaflet.css');
+
+:global .leaflet-container {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+:global .leaflet-container {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQYV2NctfPx/zB3WUZCNCMDkQBuEiH1oybiDSEAMKIkC3F4ObQAAAAASUVORK5CYII=);
+}
+:global .leaflet-container img {
+    -webkit-filter: saturate(-100);
+    filter: saturate(-100);
+}
+:global .leaflet-control-attribution {
+    display: none;
+}
+.container
+{
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+.divIcon {
+    width: 40px;
+    height: 48px;
+    background: url('./images/pin.png') no-repeat 0 0;
+}
+.price {
+    color: #fff;
+    font-weight: 300px;
+    text-align: center;
+    line-height: 39px;
+    font-size: 13px;
+}
